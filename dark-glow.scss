@@ -1,1 +1,42 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$gray: rgba(128, 128, 128, 0.4);
+$border-on-hover: rgba(0, 0, 0, 0.1);
+$accent-color: #b8003a;
+$on-accent-color: white;
+
+* {
+    border-radius: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Open Sans';
+}
+
+.accent {
+    background-color: $accent-color;
+    color: $on-accent-color;
+}
+
+button {
+    font: inherit;
+    color: inherit;
+    
+    border: none;
+    background-color: $gray;
+    
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    box-shadow:inset 0px 0px 0px 0px rgba(0,0,0,0);
+    min-width: 128px;
+    
+    transition: box-shadow 0.2s;
+}
+
+button:hover {
+    box-shadow:inset 0px 0px 0px 5px $border-on-hover;
+}
