@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;800&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;800&family=Open+Sans&display=swap');
 
 $gray: rgba(128, 128, 128, 0.4);
 $border-on-hover: rgba(0, 0, 0, 0.1);
@@ -35,6 +35,13 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 600%;
     font-weight: 800;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 300%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 header {
