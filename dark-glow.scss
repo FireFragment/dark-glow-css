@@ -28,6 +28,8 @@ body {
     }
 }
 
+// ====| HEADERS |====
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lexend';
 }
@@ -50,6 +52,8 @@ h3 {
     font-size: 180%;
 }
 
+// ====| MAIN SECTIONS |====
+
 header {
     background-color: $accent-color;
     padding: 5%;
@@ -64,6 +68,8 @@ header div {
 main {
     margin: 1%;
 }
+
+// ====| COMPONENTS |====
 
 .accent {
     background-color: $accent-color;
