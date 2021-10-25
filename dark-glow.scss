@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;800&family=Open+Sans&display=swap');
 
 $gray: rgba(128, 128, 128, 0.4);
 $border-on-hover: rgba(0, 0, 0, 0.1);
@@ -17,6 +17,7 @@ body {
     background-color: white;
     font-size: 15px;
     font-family: $font;
+    margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,6 +30,22 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lexend';
+}
+
+h1 {
+    font-size: 600%;
+    font-weight: 800;
+}
+
+header {
+    background-color: $accent-color;
+    padding: 5%;
+    text-align: center;
+    font-family: 'Lexend';
+}
+
+header div {
+    font-size: 150%;
 }
 
 .accent {
