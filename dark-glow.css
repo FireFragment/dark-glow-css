@@ -1,41 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;800&family=Open+Sans&display=swap');
 
-$gray: rgba(128, 128, 128, 0.4);
-$border-on-hover: rgba(0, 0, 0, 0.1);
-$accent-color: #b8003a;
-$on-accent-color: white;
-$bg: white;
+:root {
+    --gray: rgba(128, 128, 128, 0.4);
+    --border-on-hover: rgba(0, 0, 0, 0.1);
+    --accent-color: #b8003a;
+    --on-accent-color: white;
+    --bg: white;
+    --fg: black;
 
-$accent-font: 'Lexend';
-$font: 'Open Sans';
+    --dark-theme: true;
+
+    --accent-font: 'Lexend';
+    --font: 'Open Sans';
+}
 
 * {
     border-radius: 0;
 }
 
 body {
-    background-color: white;
+    background-color: var(--bg);
+    color: var(--fg);
     font-size: 15px;
-    font-family: $font;
+    font-family: var(--font);
     margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-    $border-on-hover: rgba(255, 255, 255, 0.1);
-    body {
-        background-color: black;
-        color: white;
-    }
-}
-
-// ====| MAIN SECTIONS |====
+/* ====| MAIN SECTIONS |==== */
 
 header {
-    background-color: $accent-color;
+    background-color: var(--accent-color);
     padding: 5%;
     text-align: center;
     font-family: 'Lexend';
-    color: $on-accent-color;
+    color: var(--on-accent-color);
 }
 
 header div {
@@ -46,7 +44,7 @@ main {
     margin: 1%;
 }
 
-// ====| HEADERS |====
+/* ====| HEADERS |==== */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lexend';
@@ -65,21 +63,21 @@ h2 {
 }
 
 h3 {
-    color: $accent-color;
+    color: var(--accent-color);
     text-transform: uppercase;
     font-size: 180%;
 }
 
 h4 {
-    color: $accent-color;
+    color: var(--accent-color);
     font-size: 150%;
 }
 
-// ====| COMPONENTS |====
+/* ====| COMPONENTS |==== */
 
 .accent {
-    background-color: $accent-color;
-    color: $on-accent-color;
+    background-color: var(--accent-color);
+    color: var(--on-accent-color);
 }
 
 button {
@@ -87,7 +85,7 @@ button {
     color: inherit;
     
     border: none;
-    background-color: $gray;
+    background-color: var(--gray);
     
     padding-left: 16px;
     padding-right: 16px;
@@ -101,5 +99,13 @@ button {
 }
 
 button:hover {
-    box-shadow:inset 0px 0px 0px 5px $border-on-hover;
+    box-shadow:inset 0px 0px 0px 5px var(--border-on-hover);
+}
+
+input[type=text], input:not([type]) {
+    all: inherit;
+    display: inline;
+    padding: 10px;
+    border: 3px solid;
+    background: none;
 }
