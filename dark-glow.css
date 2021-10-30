@@ -3,7 +3,8 @@
 :root {
     --gray: rgba(128, 128, 128, 0.4);
     --border-on-hover: rgba(0, 0, 0, 0.1);
-    --accent-color: #b8003a;
+    --accent-color-rgb: 184, 0, 58;
+    --accent-color: rgb(var(--accent-color-rgb));
     --on-accent-color: white;
     --bg: white;
     --fg-rgb: 0, 0, 0;
@@ -113,4 +114,13 @@ input[type=text], input:not([type]) {
     border: 3px solid rgba(var(--fg-rgb), 0.3);
     background: none;
     margin: 0;
+}
+
+input:focus {
+    border: 3px solid var(--accent-color);
+    box-shadow: 0px 0px 15px 3px rgba(var(--accent-color-rgb), 1);
+}
+
+input {
+    transition: border 0.3s, box-shadow 0.3s;
 }
