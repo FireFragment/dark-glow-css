@@ -6,8 +6,8 @@
     --accent-color: #b8003a;
     --on-accent-color: white;
     --bg: white;
-    --fg: black;
     --fg-rgb: 0, 0, 0;
+    --fg: rgb(var(--fg-rgb));
 
     --dark-theme: true;
 
