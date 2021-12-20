@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;800&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;800&family=Open+Sans@400;700&display=swap');
 
 :root {
     --gray: rgba(128, 128, 128, 0.4);
@@ -124,4 +124,25 @@ input:focus {
 
 input {
     transition: border 0.3s, box-shadow 0.3s;
+}
+
+.inline-opts {
+  display: flex;
+  direction: column;
+}
+
+.inline-opts > * {
+  padding-left: 8px;
+  padding-right: 8px;
+  border-right: 1px solid var(--fg);
+  cursor: pointer;
+}
+
+.inline-opts > *:last-child {
+  border: none;
+}
+
+.inline-opts > .selected {
+  font-weight: bold;
+  color: var(--accent-color);
 }
