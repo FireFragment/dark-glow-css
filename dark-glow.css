@@ -151,3 +151,12 @@ input {
   font-weight: bold;
   color: var(--accent-color);
 }
+
+a {
+  transition: color 0.2s;
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: rgb(128, 128, 128);
+}
