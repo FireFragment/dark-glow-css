@@ -6,15 +6,11 @@
     --accent-color-rgb: 184, 0, 58;
     --accent-color: rgb(var(--accent-color-rgb));
     --on-accent-color: white;
-    --bg: white;
-    --fg-rgb: 0, 0, 0;
-    --fg: rgb(var(--fg-rgb));
-
-    --dark-theme: true;
 
     --accent-font: 'Lexend';
     --font: 'Open Sans';
 }
+
 
 * {
     border-radius: 0;
@@ -27,6 +23,21 @@ body {
     font-family: var(--font);
     margin: 0;
     min-height: 100vh;
+}
+
+
+/* ====| THEMES |==== */
+
+[theme=light], :root {
+    --bg: white;
+    --fg-rgb: 0, 0, 0;
+    --fg: rgb(var(--fg-rgb));
+}
+
+[theme=dark] {
+    --bg: black;
+    --fg-rgb: 255, 255, 255;
+    --fg: rgb(var(--fg-rgb));
 }
 
 /* ====| MAIN SECTIONS |==== */
