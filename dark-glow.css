@@ -48,7 +48,7 @@ header {
     padding: 5%;
     margin: 1%;
     text-align: right;
-    font-family: 'Lexend';
+    font-family: var(--accent-font);
     text-transform: uppercase;
     display: flex;
     flex-direction: row-reverse;
@@ -60,6 +60,9 @@ header {
     font-size: 110%;
     letter-spacing: 4px;
     margin-top: 16px;
+
+    font-family: var(--accent-font);
+    text-transform: uppercase;
 }
 
 .small-text a {
@@ -107,7 +110,7 @@ footer {
 /* ====| HEADERS |==== */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lexend';
+    font-family: var(--accent-font);
 }
 
 h1 {
@@ -132,6 +135,7 @@ h2 {
     font-size: 300%;
     padding-top: 1%;
     padding-bottom: 1%;
+    color: var(--fancy-fg);
 }
 
 h3 {
